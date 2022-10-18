@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    background: url("/assets/images/bg-main-mobile.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+}
+
+.cardback {
+    position: relative;
+}
+
+.cardfront {
+    position: absolute;
+    top: 45%;
+}
+
+.cd-back {
+    width: 75%;
+    display: flex;
+    margin: 10% 20%;
+}
+
+.cd-front {
+    width: 75%;
+    display: flex;
+    margin: 5%;
+}
+
+.section-form {
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 15px;
+    color: #21092F;
+    font-weight: 600;
+}
+/* 
+.label {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+} */
+
+.data {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8%;
+    margin-top: 8px;
+}
+/* 
+.date {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+} */
+
+.validation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.cvc {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.mounth {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.input-date {
+    display: flex;
+    width: 45%;
+    border-radius: 8%;
+}
+
+.input-cvc {
+    width: 100%;
+}
+
+.button-confirm {
+    width: 100%;
+    height: 5vh;;
+    background: #21092F;
+    color: #fff;
+    border-radius: 7%;
+    border: none;
+}

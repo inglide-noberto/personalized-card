@@ -1,23 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Personalized Card</title>
 </head>
-<body>
-    <header>
-        
-    </header>
-    <section>
 
+<body>
+    <header class="header">
+        <div class="cardback">
+            <img class="cd-back" src="/assets/images/bg-card-back.png" alt="card back">
+            <div class="cardfront">
+                <img class="cd-front" src="/assets/images/bg-card-front.png" alt="card front">
+            </div>
+        </div>
+    </header>
+    <section class="section-form">
+        <form class="">
+            <label class="label-name" for="name"> CARDHOLDER NAME
+                <input class="data" type="text" name="name" id="name" required placeholder="Titular do Cartão">
+            </label>
+            <label class="label-number" for="number"> CARD NUMBER
+                <input class="data" type="number" name="number" id="number" required placeholder="1234 5678 9123 0000">
+            </label>
+            <div class="validation">
+                <div class="mounth">
+                    <label for="date">EXP. DATE (MM/YY)</label>
+                    <div class="container">
+                        <input class="input-date" type="number" name="date" placeholder="MM">
+                        <input class="input-date" type="number" name="date" placeholder="YY">
+                    </div>
+                </div>
+                <div class="cvc">
+                    <label for="cvc-label">CVC</label>
+                    <input class="input-cvc" type="number" name="cvc-label" placeholder="000">
+                </div>
+            </div>
+            <button class="button-confirm" type="submit">Confirm</button>
+        </form>
     </section>
     <footer>
-
     </footer>
-    <script type="text/javascript" src="/javascript/index.js"></script>
+    <script type="text/javascript" src="/assets/javascript/index.js"></script>
 </body>
+
 </html>
