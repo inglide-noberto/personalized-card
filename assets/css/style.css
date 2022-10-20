@@ -103,12 +103,14 @@
 
 /* ---------RESPONSIVE Tablet------------- */
 @media (min-width: 768px) {
-    body{
+    body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin: 0;
     }
-    .header{
+
+    .header {
         display: flex;
         flex-direction: column;
         background: url("/assets/images/bg-main-mobile.png") no-repeat;
@@ -129,24 +131,25 @@
         width: 100%;
         margin-left: 45%;
         position: relative;
-        bottom: calc(30% + 10%);
+        bottom: calc(30% - 2%);
     }
 
     .cardfront {
         position: relative;
-        top: 30%;
+        top: 35%;
         width: 100%;
         margin-left: 45%;
     }
+
     .section-form {
         width: 40%;
-        height: 50vh;
+        height: 80vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
-        margin-top: 45%;
-        margin-left: 15px;
+        margin-top: 25%;
+        margin-right: 10%;
         color: #21092F;
         font-weight: 600;
     }
@@ -205,7 +208,217 @@
     }
 
 }
-/* ---------RESPONSIVE Monitor------------- */
-@media screen {
-    
+
+/* ---------RESPONSIVE Monitor ------------- */
+@media (min-width: 1280px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        background: url("/assets/images/bg-main-desktop.png") no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 100vh;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        width: 100%;
+        height: 90vh;
+    }
+
+    .cardback {
+        width: 100%;
+        margin-left: 45%;
+        position: relative;
+        bottom: calc(30% - 5%);
+    }
+
+    .cardfront {
+        position: relative;
+        top: 30%;
+        width: 100%;
+        margin-left: 45%;
+    }
+
+    .section-form {
+        width: 40%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20%;
+        margin-right: 15%;
+        color: #21092F;
+        font-weight: 600;
+    }
+
+    .data {
+        width: 100%;
+        padding: 10px;
+        border-radius: 8%;
+        margin-top: 8px;
+    }
+
+    .validation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin: 25px 0;
+    }
+
+    .cvc {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .mounth {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .input-date {
+        display: flex;
+        width: 45%;
+        border-radius: 8%;
+    }
+
+    .input-cvc {
+        width: 100%;
+    }
+
+    .button-confirm {
+        width: 100%;
+        height: 5vh;
+        background: #21092F;
+        color: #fff;
+        border-radius: 7%;
+        border: none;
+    }
+}
+
+/* ---------RESPONSIVE Monitor EXTRA------------- */
+@media (min-width: 1920px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        background: url("/assets/images/bg-main-desktop.png") no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 100vh;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        width: 100%;
+        height: 90vh;
+    }
+
+    .cardback {
+        width: 100%;
+        margin-left: 45%;
+        position: relative;
+        bottom: calc(30% - 20%);
+    }
+
+    .cardfront {
+        position: relative;
+        top: 30%;
+        width: 100%;
+        margin-left: 45%;
+    }
+
+    .section-form {
+        width: 30%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15%;
+        margin-right: 15%;
+        color: #21092F;
+        font-weight: 600;
+    }
+
+    .data {
+        width: 100%;
+        padding: 10px;
+        border-radius: 8%;
+        margin-top: 8px;
+    }
+
+    .validation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin: 25px 0;
+    }
+
+    .cvc {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .mounth {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .input-date {
+        display: flex;
+        width: 45%;
+        border-radius: 8%;
+    }
+
+    .input-cvc {
+        width: 100%;
+    }
+
+    .button-confirm {
+        width: 100%;
+        height: 5vh;
+        background: #21092F;
+        color: #fff;
+        border-radius: 7%;
+        border: none;
+    }
 }
