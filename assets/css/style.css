@@ -351,9 +351,9 @@
     .info-cvc{
         display: flex;
         width: 50px;
-        position: absolute;
+        position: relative;
         left: 80%;
-        bottom: 48%
+        bottom: 50%;
     }
 
     .cardfront {
@@ -369,8 +369,8 @@
         flex-direction: row;
         justify-content: space-between;
         width: 70%;
-        position: absolute;
-        top: 70%;
+        position: relative;
+        bottom: 40%;
         left: 8%;
     }
     .infos{
@@ -378,8 +378,8 @@
         flex-direction: row;
         justify-content: space-between;
         width: 70%;
-        position: absolute;
-        top: 85%;
+        position: relative;
+        bottom: 30%;
         left: 8%;
     }
 

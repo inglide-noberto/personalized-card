@@ -19,24 +19,24 @@
             <div class="cardback">
                 <img class="cd-back" src="/assets/images/bg-card-back.png" alt="card back">
                 <div class="info-cvc">
-                    <p>000</p>
+                    <p class="cvcCard">000</p>
                 </div>
             </div>
             <div class="cardfront">
                 <img class="cd-front" src="/assets/images/bg-card-front.png" alt="card front">
                 <div class="info-number">
                     <p class="numberCard">
-                        1234 5678 9123 0000
+                        0000 0000 0000 0000
                     </p>
                 </div>
                 <div class="infos">
                     <div class="info-name">
-                        <p>
-                            Thays M Andrade
+                        <p class="nameCard">
+                            name example
                         </p>
                     </div>
                     <div class="info-date">
-                        <p>
+                        <p class="dateCard">
                             05/30
                         </p>
                     </div>
@@ -50,19 +50,19 @@
                 <input class="data" type="text" name="name" id="name" required placeholder="Titular do Cartão">
             </label>
             <label class="label-number" for="number"> CARD NUMBER
-                <input class="data" type="number" name="number" id="number" required placeholder="1234 5678 9123 0000">
+                <input class="data" type="number" name="number" id="number" required placeholder="1234 5678 9123 0000" value="">
             </label>
             <div class="validation">
                 <div class="mounth">
                     <label for="date">EXP. DATE (MM/YY)</label>
                     <div class="container">
-                        <input class="input-date" type="number" name="date" placeholder="MM">
-                        <input class="input-date" type="number" name="date" placeholder="YY">
+                        <input class="input-date" type="number" name="date" id="dateM" placeholder="MM">
+                        <input class="input-date" type="number" name="date" id="dateY" placeholder="YY">
                     </div>
                 </div>
                 <div class="cvc">
                     <label for="cvc-label">CVC</label>
-                    <input class="input-cvc" type="number" name="cvc-label" placeholder="000">
+                    <input class="input-cvc" type="number" name="cvc-label" id="cvc" placeholder="000">
                 </div>
             </div>
             <button class="button-confirm" type="submit">Confirm</button>
