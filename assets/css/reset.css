@@ -23,6 +23,9 @@ time, mark, audio, video {
 label{
 	margin-bottom: 15px;
 }
+p{
+	color: #fff;
+}
 input{
 	border-color: whitesmoke;
 	border-radius: 13%;
