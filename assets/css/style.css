@@ -18,8 +18,8 @@
 }
 
 .cardfront {
-    position: absolute;
-    top: 45%;
+    position: relative;
+    bottom: 50%;
 }
 
 .cd-back {
@@ -32,6 +32,34 @@
     width: 75%;
     display: flex;
     margin: 5%;
+}
+.cardback{
+    position: relative;
+}
+.info-cvc{
+    display: flex;
+    width: 50px;
+    position: absolute;
+    left: 80%;
+    bottom: 45%;
+}
+.info-number{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    position: absolute;
+    bottom: 30%;
+    left: 8%;
+}
+.infos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
 }
 
 .section-form {
@@ -126,10 +154,13 @@
         width: 100%;
         height: 90vh;
     }
+    .cd-back, .cd-front{
+        width: 100%;
+    }
 
     .cardback {
         width: 100%;
-        margin-left: 45%;
+        margin-left: 30%;
         position: relative;
         bottom: calc(30% - 2%);
     }
@@ -138,7 +169,37 @@
         position: relative;
         top: 35%;
         width: 100%;
-        margin-left: 45%;
+        margin-left: 30%;
+    }
+    .info-cvc{
+        display: flex;
+        width: 50px;
+        position: absolute;
+        left: 95%;
+        bottom: 45%;
+        font-size: 0.9rem;
+    }
+    .info-number{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+        position: absolute;
+        bottom: 30%;
+        left: 8%;
+        font-size: 0.9rem;
+    }
+    .infos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        position: absolute;
+        bottom: 1%5;
+        left: 8%;
+    }
+    .info-date, .info-name{
+        font-size: 0.9rem;;
     }
 
     .section-form {
@@ -348,14 +409,7 @@
         position: relative;
         bottom: calc(30% - 20%);
     }
-    .info-cvc{
-        display: flex;
-        width: 50px;
-        position: relative;
-        left: 80%;
-        bottom: 50%;
-    }
-
+    
     .cardfront {
         position: relative;
         top: 30%;
@@ -363,6 +417,13 @@
         height: 260px;
         margin-left: 45%;
         padding: 0;
+    }
+    .info-cvc{
+        display: flex;
+        width: 50px;
+        position: relative;
+        left: 80%;
+        bottom: 50%;
     }
     .info-number{
         display: flex;

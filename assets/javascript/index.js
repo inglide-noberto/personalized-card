@@ -10,6 +10,13 @@ const nameCard = document.querySelector(".nameCard");
 const date = document.querySelector(".dateCard");
 const cvc = document.querySelector(".cvcCard");
 
+const button = document.querySelector(".button-confirm");
+const section = document.querySelector(".section-form");
+
+button.addEventListener("click", (e, section)=>{
+    e.preventDefault();
+})
+
 nameInput.addEventListener('change', (e) => { 
     e.preventDefault();
     nameCard.textContent = e.target.value ;
@@ -19,8 +26,7 @@ numberInput.addEventListener('change', (e) => {
     numberCard.textContent = e.target.value
 });
 dateYInput.addEventListener('change', (e) => {
-    e.preventDefault(); 
-    date.textContent = ( dateMInput.value+ " / " + e.target.value);
+        date.textContent = ( dateMInput.value+ " / " + e.target.value);
 });
 cvcInput.addEventListener('change', (e) => {
     cvc.textContent = e.target.value;
