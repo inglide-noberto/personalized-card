@@ -13,22 +13,33 @@ const cvc = document.querySelector(".cvcCard");
 const button = document.querySelector(".button-confirm");
 const section = document.querySelector(".section-form");
 
-button.addEventListener("click", (e, section)=>{
-    e.preventDefault();
-})
+let contador = 0;
 
-nameInput.addEventListener('change', (e) => { 
+// button.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     if (contador == 4) {
+//         console.log(contador);
+//         section.style.display = "none";
+//     } else {
+//         console.log("Nananinanão!")
+//     }
+
+// });
+nameInput.addEventListener('change', (e) => {
     e.preventDefault();
-    nameCard.textContent = e.target.value ;
+    nameCard.textContent = e.target.value;
+    contador++;
 });
 numberInput.addEventListener('change', (e) => {
     e.preventDefault();
-    numberCard.textContent = e.target.value
+    numberCard.textContent = e.target.value;
+    contador++;
 });
 dateYInput.addEventListener('change', (e) => {
-        date.textContent = ( dateMInput.value+ " / " + e.target.value);
+    date.textContent = (dateMInput.value + " / " + e.target.value);
+    contador++;
 });
 cvcInput.addEventListener('change', (e) => {
     cvc.textContent = e.target.value;
+    contador++;
 });
-
