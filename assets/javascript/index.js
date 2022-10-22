@@ -10,21 +10,30 @@ const nameCard = document.querySelector(".nameCard");
 const date = document.querySelector(".dateCard");
 const cvc = document.querySelector(".cvcCard");
 
-const button = document.querySelector(".button-confirm");
+const buttonConfirm = document.querySelector(".button-confirm");
 const section = document.querySelector(".section-form");
+const buttonContinue = document.querySelector(".button-complete");
+const complete = document.querySelector(".complete");
 
 let contador = 0;
 
-// button.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     if (contador == 4) {
-//         console.log(contador);
-//         section.style.display = "none";
-//     } else {
-//         console.log("Nananinanão!")
-//     }
+buttonConfirm.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (contador == 4) {
+        section.style.display = "none";
+        complete.style.display = "flex";
 
-// });
+    } else {
+        console.log("Nananinanão!")
+    }
+
+});
+buttonContinue.addEventListener('click', (e) => {
+    complete.style.display = "none";
+    section.style.display = "flex";
+    window.location.reload(true);
+    
+});
 nameInput.addEventListener('change', (e) => {
     e.preventDefault();
     nameCard.textContent = e.target.value;
@@ -36,10 +45,17 @@ numberInput.addEventListener('change', (e) => {
     contador++;
 });
 dateYInput.addEventListener('change', (e) => {
-    date.textContent = (dateMInput.value + " / " + e.target.value);
-    contador++;
+    if (dateMInput.value <= 12 && dateYInput.value >= 22) {
+        date.textContent = (dateMInput.value + " / " + e.target.value);
+        console.log(dateMInput.value);
+        contador++;
+    }
+    else {
+        alert("Digite uma data válida");
+    }
 });
 cvcInput.addEventListener('change', (e) => {
     cvc.textContent = e.target.value;
+    console.log(cvc.value)
     contador++;
 });
