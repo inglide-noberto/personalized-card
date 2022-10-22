@@ -28,7 +28,7 @@ p{
 }
 input{
 	border-color: whitesmoke;
-	border-radius: 13%;
+	border-radius: 5px;
 	margin-bottom: 20px;
 }
 body {

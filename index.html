@@ -14,60 +14,61 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="card">
-            <div class="cardback">
-                <img class="cd-back" src="/assets/images/bg-card-back.png" alt="card back">
-                <div class="info-cvc">
-                    <p class="cvcCard">000</p>
+        <header class="header">
+            <div class="card">
+                <div class="cardback">
+                    <img class="cd-back" src="/assets/images/bg-card-back.png" alt="card back">
+                    <div class="info-cvc">
+                        <p class="cvcCard">000</p>
+                    </div>
                 </div>
-            </div>
-            <div class="cardfront">
-                <img class="cd-front" src="/assets/images/bg-card-front.png" alt="card front">
-                <div class="info-number">
-                    <p class="numberCard">
-                        0000 0000 0000 0000
-                    </p>
-                </div>
-                <div class="infos">
-                    <div class="info-name">
-                        <p class="nameCard">
-                            name example
+                <div class="cardfront">
+                    <img class="cd-front" src="/assets/images/bg-card-front.png" alt="card front">
+                    <div class="info-number">
+                        <p class="numberCard">
+                            0000 0000 0000 0000
                         </p>
                     </div>
-                    <div class="info-date">
-                        <p class="dateCard">
-                            05/30
-                        </p>
+                    <div class="infos">
+                        <div class="info-name">
+                            <p class="nameCard">
+                                name example
+                            </p>
+                        </div>
+                        <div class="info-date">
+                            <p class="dateCard">
+                                05/30
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <section class="section-form">
-        <form class="">
-            <label class="label-name" for="name"> CARDHOLDER NAME
-                <input class="data" type="text" name="name" id="name" required placeholder="Titular do Cartão">
-            </label>
-            <label class="label-number" for="number"> CARD NUMBER
-                <input class="data" type="number" name="number" id="number" title="Digite apenas números" required placeholder="1234 5678 9123 0000" value="">
-            </label>
-            <div class="validation">
-                <div class="mounth">
-                    <label for="date">EXP. DATE (MM/YY)</label>
-                    <div class="container">
-                        <input class="input-date" type="number" name="date" id="dateM" placeholder="MM">
-                        <input class="input-date" type="number" name="date" id="dateY" placeholder="YY">
+        </header>
+        <section class="section-form">
+            <form class="">
+                <label class="label-name" for="name"> CARDHOLDER NAME
+                    <input class="data" type="text" name="name" id="name" required placeholder="Titular do Cartão">
+                </label>
+                <label class="label-number" for="number"> CARD NUMBER
+                    <input class="data" type="number" name="number" id="number" title="Digite apenas números" required
+                        placeholder="1234 5678 9123 0000" value="">
+                </label>
+                <div class="validation">
+                    <div class="mounth">
+                        <label for="date">EXP. DATE (MM/YY)</label>
+                        <div class="container">
+                            <input class="input-date" type="number" name="date" id="dateM" placeholder="MM">
+                            <input class="input-date" type="number" name="date" id="dateY" placeholder="YY">
+                        </div>
+                    </div>
+                    <div class="cvc">
+                        <label for="cvc-label">CVC</label>
+                        <input class="input-cvc" type="number" name="cvc-label" id="cvc" placeholder="000">
                     </div>
                 </div>
-                <div class="cvc">
-                    <label for="cvc-label">CVC</label>
-                    <input class="input-cvc" type="number" name="cvc-label" id="cvc" placeholder="000">
-                </div>
-            </div>
-            <button class="button-confirm" type="submit">Confirm</button>
-        </form>
-    </section>
+                <button class="button-confirm" type="submit">Confirm</button>
+            </form>
+        </section>
     <script type="text/javascript" src="/assets/javascript/index.js"></script>
 </body>
 
